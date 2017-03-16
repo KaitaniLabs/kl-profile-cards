@@ -89,12 +89,14 @@
 </div>
 </div>
                         
-
+                <hr>
                 <h4>Card Block Sizing</h4>
                 <p>You can control the sizing of a KL card block by adding a KL namespaced standard Bootstrap sizing class. E.g. <code>kl-xs, kl-sm, kl-md, kl-lg, kl-xl</code> and an <strong>extra</strong> large one with <code>kl-xxl</code>. Sizing has nothing to do with width, only with height. Here is a table to explain what heights you get with each size:</p>
                 <p>
-                    <table class="table">
-                        <tr><th>Size</th><th>Height</th></tr>
+                    <table class="table table-striped">
+                        <thead class="thead-inverse">
+                            <tr><th>Size</th><th>Height</th></tr>
+                        </thead>
                         <tr><td>No size</td><td>3px</td></tr>
                         <tr><td>kl-xs</td><td>15px</td></tr>
                         <tr><td>kl-sm</td><td>50px</td></tr>
@@ -106,6 +108,7 @@
                 </p>
                 <p>Card blocks should <strong>not</strong> be nested. They are super-level blocks (i.e. the biggest).</p>
 
+                <hr>
                 <h4>Backgrounds</h4>
                 <p>You can apply standard Bootstrap background classes to your KL card blocks such as <code>bg-primary, bg-success</code> if you want to, or you can manually set a background image with inline styles or your own custom CSS.</p>
                 <p>If you want an easy way of setting a background image, you can add a div with class <code>kl-background</code> inside a <code>kl-card-block</code> and add an image inside of that. We'll take care of the rest. <br/><em>If you use the kl-background class it gets automatically pushed to the bottom of the stack (smallest z-index) no matter what position it appears inside your code, so it will never sit on top of your content.</em></p>
@@ -127,7 +130,7 @@
     </code></pre>
 </div>
 </div>
-                        
+                <hr>
 
             </div>
         </div>
