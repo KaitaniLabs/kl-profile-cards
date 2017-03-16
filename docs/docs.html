@@ -24,10 +24,10 @@
 
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="docs.html">Documentation</a>
           </li>
           <li class="nav-item">
@@ -39,10 +39,10 @@
 
     <div class="jumbotron">
       <div class="container">
-        <h1 class="display-3">KL :: Profile Cards</h1>
-        <p>Funky flexible profile card CSS </p>
+        <h1 class="display-3">Documentation</h1>
+        <p>All you need to know to create your own funky <strike>chicken</strike> profile cards for Bootstrap 4.x</p>
         <p>
-            <a class="btn btn-primary btn-lg" href="docs.html" role="button">Learn more</a>
+            <a class="btn btn-primary btn-lg" href="index.html" role="button">Home</a>
             <a class="btn btn-primary btn-lg" href="examples.html" role="button">Examples</a>
             <a class="btn btn-primary btn-lg" href="https://github.com/Allerion/kl-profile-cards" role="button">Github</a>
         </p>
@@ -50,25 +50,30 @@
     </div>
 
     <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          
-        </div>
-        <div class="col-md-4">
-          
-       </div>
-        <div class="col-md-4">
-          
-        </div>
-      </div>
+        <div class="row">
+            <div class="col-12">
+                <h1>Framework</h1>
+                <p>The KL Profile Cards make use of Bootstrap 4's new <code>.card</code> component, so that's where we need to get started. Build a basic card to start with like the following:</p>
+                <pre>
+                    <div class="card kl-card">
+                        <div class="card-block">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </pre>
+                <p>Most of the magic happens with the super class <code>.kl-card</code>, which we need to add to the card like in the example above.</p>
 
-      <hr>
+
+            </div>
+        </div>
+
+        <hr>
 
       <footer>
         <p>© Kaitani Labs 2017</p>
       </footer>
-    </div> <!-- /container -->  
+    </div>
 
 </body>
 </html>
