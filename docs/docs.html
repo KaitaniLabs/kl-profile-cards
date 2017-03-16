@@ -54,29 +54,41 @@
             <div class="col-12">
                 <h1>Framework</h1>
                 <p>The KL Profile Cards make use of Bootstrap 4's new <code>.card</code> component, so that's where we need to get started. Build a basic card to start with like the following:</p>
-                <pre><code>
-                    &lt;div class="card kl-card"&gt;
-                        &lt;div class="card-block"&gt;
-                            &lt;h4 class="card-title">Card title&lt;/h4&gt;
-                            &lt;p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
-                        &lt;/div&gt;
-                    &lt;/div&gt;
-                </code></pre>
+
+<div class="card">
+<div class="card-block">
+    <pre><code>
+        &lt;div class="card kl-card"&gt;
+            &lt;div class="card-block"&gt;
+                &lt;h4 class="card-title">Card title&lt;/h4&gt;
+                &lt;p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    </code></pre>
+</div>
+</div>
+                        
                 <p>Most of the magic happens with the super class <code>.kl-card</code>, which we need to add to the card like in the example above.</p>
 
                 <h2>Card Blocks</h2>
                 <p>To add blocks to your card, you need to include a div element with class <code>.kl-card-block</code> inside it. The KL card block has relative positioning and full width. You can add as many as you like, and they will sit below each other in a neat line. See the example below:</p>
-                <pre><code>
-                    &lt;div class="card kl-card"&gt;
-                        &lt;div class="kl-card-block"&gt;
-                            
-                        &lt;/div&gt;
-                        &lt;div class="card-block"&gt;
-                            &lt;h4 class="card-title">Card title&lt;/h4&gt;
-                            &lt;p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
-                        &lt;/div&gt;
-                    &lt;/div&gt;
-                </code></pre>
+
+<div class="card">
+<div class="card-block">
+    <pre><code>
+        &lt;div class="card kl-card"&gt;
+            &lt;div class="kl-card-block"&gt;
+                
+            &lt;/div&gt;
+            &lt;div class="card-block"&gt;
+                &lt;h4 class="card-title">Card title&lt;/h4&gt;
+                &lt;p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    </code></pre>
+</div>
+</div>
+                        
 
                 <h4>Card Block Sizing</h4>
                 <p>You can control the sizing of a KL card block by adding a KL namespaced standard Bootstrap sizing class. E.g. <code>kl-xs, kl-sm, kl-md, kl-lg, kl-xl</code> and an <strong>extra</strong> large one with <code>kl-xxl</code>. Sizing has nothing to do with width, only with height. Here is a table to explain what heights you get with each size:</p>
@@ -98,19 +110,24 @@
                 <p>You can apply standard Bootstrap background classes to your KL card blocks such as <code>bg-primary, bg-success</code> if you want to, or you can manually set a background image with inline styles or your own custom CSS.</p>
                 <p>If you want an easy way of setting a background image, you can add a div with class <code>kl-background</code> inside a <code>kl-card-block</code> and add an image inside of that. We'll take care of the rest. <br/><em>If you use the kl-background class it gets automatically pushed to the bottom of the stack (smallest z-index) no matter what position it appears inside your code, so it will never sit on top of your content.</em></p>
 
-                <pre><code>
-                    &lt;div class="card kl-card"&gt;
-                        &lt;div class="kl-card-block"&gt;
-                            &lt;div class="kl-background"&gt;
-                                &lt;img src="https://www.lorempixel.com/250/250/nature"&gt;
-                            &lt;/div&gt;
-                        &lt;/div&gt;
-                        &lt;div class="card-block"&gt;
-                            &lt;h4 class="card-title">Card title&lt;/h4&gt;
-                            &lt;p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
-                        &lt;/div&gt;
-                    &lt;/div&gt;
-                </code></pre>
+<div class="card">
+<div class="card-block">
+    <pre><code>
+        &lt;div class="card kl-card"&gt;
+            &lt;div class="kl-card-block"&gt;
+                &lt;div class="kl-background"&gt;
+                    &lt;img src="https://www.lorempixel.com/250/250/nature"&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="card-block"&gt;
+                &lt;h4 class="card-title">Card title&lt;/h4&gt;
+                &lt;p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    </code></pre>
+</div>
+</div>
+                        
 
             </div>
         </div>
