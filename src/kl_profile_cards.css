@@ -580,7 +580,7 @@ SOFTWARE.
 
 /** -- Hide -- **/
 .kl-card .kl-hide:not(.kl-card-block) {opacity: 1;}
-.kl-card.kl-hide:hover .kl-hide:not(.kl-card-block), .kl-card.kl-hide.hover .kl-hide:not(.kl-card-block),.kl-card-block.kl-hide:hover .kl-hide:not(.kl-card-block), .kl-card-block.kl-hide.hover .kl-hide:not(.kl-card-block), .kl-card .kl-hide:hover:not(.kl-card-block), .kl-card .kl-hide:not(.kl-card-block).hover {opacity: 0;}
+.kl-card.kl-hide:hover .kl-hide:not(.kl-card-block), .kl-card.kl-hide.hover .kl-hide:not(.kl-card-block),.kl-card-block.kl-hide:hover .kl-hide:not(.kl-card-block), .kl-card-block.kl-hide.hover .kl-hide:not(.kl-card-block), .kl-card .kl-hide:hover:not(.kl-card-block), .kl-card .kl-hide:not(.kl-card-block).hover {opacity: 0;pointer-events:none;}
 
 /** -- Slide In -- **/
 .kl-pt.kl-slide-in {top: -100%;}
