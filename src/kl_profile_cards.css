@@ -275,10 +275,10 @@ SOFTWARE.
     left: 0;
 }
 
-.kl-card.kl-overlay > .kl-card-top.kl-overlay {
+.kl-card.kl-overlay > .kl-card-block {
     overflow: hidden;
 }
-.kl-card.kl-overlay > .card-block.kl-overlay {
+.kl-card.kl-overlay > .card-block {
     overflow: hidden;
 }
 
