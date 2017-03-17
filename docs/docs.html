@@ -1591,8 +1591,98 @@
 
                 </div>
                         
+                <div class="mt-5">
+                    <h4>Triggering Transitions</h4>
+                    <p>Just like with overlays, transitions need to be triggered with hovering. This system is extremely granular in that you can determine when element transitions are triggered by applying the transition classes to block-level elements or excluding them. See the 3 options below to understand further.</p>
 
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+<pre><code>
+&lt;div class="card kl-card kl-hide kl-spin"&gt;
+    &lt;div class="kl-card-block kl-lg"&gt;
+        &lt;a href="#" class="kl-card-avatar kl-lg kl-pm"&gt;&lt;img class="kl-b-danger kl-b-lemon kl-b-3 kl-shadow kl-hide kl-spin" src="https://lorempixel.com/100/100/people"&gt;&lt;/a&gt;
+        &lt;div class="kl-background"&gt;
+            &lt;img src="https://www.lorempixel.com/300/300/nature"&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card kl-card kl-hide kl-spin">
+                                <div class="kl-card-block kl-lg">
+                                    <a href="#" class="kl-card-avatar kl-lg kl-pm"><img class="kl-b-danger kl-b-lemon kl-b-3 kl-shadow kl-hide kl-spin" src="https://lorempixel.com/100/100/people"></a>
+                                    <div class="kl-background">
+                                        <img src="https://www.lorempixel.com/300/300/nature">
+                                    </div>
+                                </div>
+                                <div class="card-block">
+                                    <h4 class="card-title">Card Level</h4>
+                                    <p class="card-text">Adding the transition classes to the <code>kl-card</code> element will trigger any child elements with matching classes when the card itself is hovered over.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+<pre><code>
+&lt;div class="card kl-card"&gt;
+    &lt;div class="kl-card-block kl-lg kl-hide kl-spin"&gt;
+        &lt;a href="#" class="kl-card-avatar kl-lg kl-pm"&gt;&lt;img class="kl-b-danger kl-b-lemon kl-b-3 kl-shadow kl-hide kl-spin" src="https://lorempixel.com/100/100/people"&gt;&lt;/a&gt;
+        &lt;div class="kl-background"&gt;
+            &lt;img src="https://www.lorempixel.com/300/300/nature"&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card kl-card">
+                                <div class="kl-card-block kl-lg kl-hide kl-spin">
+                                    <a href="#" class="kl-card-avatar kl-lg kl-pm"><img class="kl-b-danger kl-b-lemon kl-b-3 kl-shadow kl-hide kl-spin" src="https://lorempixel.com/100/100/people"></a>
+                                    <div class="kl-background">
+                                        <img src="https://www.lorempixel.com/300/300/nature">
+                                    </div>
+                                </div>
+                                <div class="card-block">
+                                    <h4 class="card-title">Block Level</h4>
+                                    <p class="card-text">Adding the transition classes to a <code>kl-card-block</code> element will trigger any child elements with matching classes when the block is hovered over.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+<pre><code>
+&lt;div class="card kl-card"&gt;
+    &lt;div class="kl-card-block kl-lg"&gt;
+        &lt;a href="#" class="kl-card-avatar kl-lg kl-pm"&gt;&lt;img class="kl-b-danger kl-b-lemon kl-b-3 kl-shadow kl-hide kl-spin" src="https://lorempixel.com/100/100/people"&gt;&lt;/a&gt;
+        &lt;div class="kl-background"&gt;
+            &lt;img src="https://www.lorempixel.com/300/300/nature"&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card kl-card">
+                                <div class="kl-card-block kl-lg">
+                                    <a href="#" class="kl-card-avatar kl-lg kl-pm"><img class="kl-b-danger kl-b-lemon kl-b-3 kl-shadow kl-hide kl-spin" src="https://lorempixel.com/100/100/people"></a>
+                                    <div class="kl-background">
+                                        <img src="https://www.lorempixel.com/300/300/nature">
+                                    </div>
+                                </div>
+                                <div class="card-block">
+                                    <h4 class="card-title">Element Level</h4>
+                                    <p class="card-text">When you don't add transition classes to parent block-level elements, transitions will only be triggered when the element itself is hovered over.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
 
                 <hr>
 
