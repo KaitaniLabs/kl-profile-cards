@@ -583,6 +583,14 @@ SOFTWARE.
 .kl-card.kl-hide:hover .kl-hide:not(.kl-card-block), .kl-card.kl-hide.hover .kl-hide:not(.kl-card-block),.kl-card-block.kl-hide:hover .kl-hide:not(.kl-card-block), .kl-card-block.kl-hide.hover .kl-hide:not(.kl-card-block), .kl-card .kl-hide:hover:not(.kl-card-block), .kl-card .kl-hide:not(.kl-card-block).hover {opacity: 0;pointer-events:none;}
 
 /** -- Slide In -- **/
+
+.kl-card.kl-slide-in > .kl-card-block {
+    overflow: hidden;
+}
+.kl-card.kl-slide-in > .card-block {
+    overflow: hidden;
+}
+
 .kl-pt.kl-slide-in {top: -100%;}
 .kl-ptl.kl-slide-in {top: -100%;left:-100%;}
 .kl-ptr.kl-slide-in {top: -100%;right:-100%;}
@@ -601,6 +609,12 @@ SOFTWARE.
 .kl-card.kl-slide-in:hover .kl-pr.kl-slide-in:not(.kl-card-block), .kl-card.kl-slide-in.hover .kl-pr.kl-slide-in:not(.kl-card-block), .kl-card-block.kl-slide-in:hover .kl-pr.kl-slide-in:not(.kl-card-block), .kl-card-block.kl-slide-in.hover .kl-pr.kl-slide-in:not(.kl-card-block)  {right:0;}
 
 /** -- Slide Out -- **/
+.kl-card.kl-slide-out > .kl-card-block {
+    overflow: hidden;
+}
+.kl-card.kl-slide-out > .card-block {
+    overflow: hidden;
+}
 .kl-card.kl-slide-out:hover .kl-pt.kl-slide-out:not(.kl-card-block), .kl-card.kl-slide-out.hover .kl-pt.kl-slide-out:not(.kl-card-block), .kl-card-block.kl-slide-out:hover .kl-pt.kl-slide-out:not(.kl-card-block), .kl-card-block.kl-slide-out.hover .kl-pt.kl-slide-out:not(.kl-card-block), .kl-card .kl-pt.kl-slide-out:not(.kl-card-block):hover, .kl-card .kl-pt.kl-slide-out:not(.kl-card-block).hover  {top: -100%;}
 .kl-card.kl-slide-out:hover .kl-ptl.kl-slide-out:not(.kl-card-block), .kl-card.kl-slide-out.hover .kl-ptl.kl-slide-out:not(.kl-card-block), .kl-card-block.kl-slide-out:hover .kl-ptl.kl-slide-out:not(.kl-card-block), .kl-card-block.kl-slide-out.hover .kl-ptl.kl-slide-out:not(.kl-card-block), .kl-card .kl-ptl.kl-slide-out:not(.kl-card-block):hover, .kl-card .kl-ptl.kl-slide-out:not(.kl-card-block).hover  {top: -100%;left:-100%;}
 .kl-card.kl-slide-out:hover .kl-ptr.kl-slide-out:not(.kl-card-block), .kl-card.kl-slide-out.hover .kl-ptr.kl-slide-out:not(.kl-card-block), .kl-card-block.kl-slide-out:hover .kl-ptr.kl-slide-out:not(.kl-card-block), .kl-card-block.kl-slide-out.hover .kl-ptr.kl-slide-out:not(.kl-card-block), .kl-card .kl-ptr.kl-slide-out:not(.kl-card-block):hover, .kl-card .kl-ptr.kl-slide-out:not(.kl-card-block).hover  {top: -100%;right:-100%;}
