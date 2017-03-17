@@ -912,15 +912,18 @@
 
                 <p>Use the <code>kl-card-overlay</code> class to make a block inside your kl-card-block an overlay. Inside of this, you add elements with the class <code>kl-card-overlay-item</code>. The number of <em>items</em> is dependent on the type of overlay you want to have.</p>
 
+                <div class="row">
+                    <div class="col-12 col-sm-6 offset-sm-3">
 <div class="card">
 <div class="card-block">
     <pre><code>
         &lt;div class="card kl-card"&gt;
             &lt;div class="kl-card-block kl-lg"&gt;
-                &lt;div class="kl-card-overlay"&gt;
+                &lt;div class="kl-card-overlay kl-card-overlay-block kl-top-in"&gt;
                     &lt;div class="kl-card-overlay-item"&gt;
                     &lt;div class="kl-card-overlay-item"&gt;
                     &lt;div class="kl-card-overlay-item"&gt;
+                &lt;/div&gt;
             &lt;/div&gt;
             &lt;div class="card-block"&gt;
                 &lt;h4 class="card-title">Card title&lt;/h4&gt;
@@ -929,8 +932,74 @@
         &lt;/div&gt;
     </code></pre>
 </div>
-</div>          
+</div>                    
+                    </div>
+                </div>
+
+         
                 <div class="row mt-5">
+
+                    <div class="col-12">
+                        <h4>Overlay Styles</h4>
+                        <p>To save you absolutely loads of time, we've put together some ready-made overlays to choose from. Awesome!</p>
+                        <p>Simply apply the overlay style class e.g. <code>kl-card-overlay-block</code> to the <code>kl-card-overlay</code> element along with a directional class such as <code>kl-top-in</code> and then add the corresponding number of <code>kl-card-overlay-items</code> inside the overlay itself for the magic to happen. Here's a little table to explain the options and then some examples.</p>
+
+                        <table class="table table-striped">
+                            <thead class="thead-inverse">
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Class</th>
+                                    <th>Items</th>
+                                    <th>Directions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Block</td>
+                                    <td>kl-card-overlay-block</td>
+                                    <td>1</td>
+                                    <td>kl-top-in, kl-right-in, kl-bottom-in, kl-left-in</td>
+                                </tr>
+                                <tr>
+                                    <td>Split Horizontal</td>
+                                    <td>kl-card-overlay-split-h</td>
+                                    <td>2</td>
+                                    <td>--</td>
+                                </tr>
+                                <tr>
+                                    <td>Split Horizontal 3</td>
+                                    <td>kl-card-overlay-split-h-3</td>
+                                    <td>3</td>
+                                    <td>kl-left-in, kl-right-in</td>
+                                </tr>
+                                <tr>
+                                    <td>Split Horizontal 4</td>
+                                    <td>kl-card-overlay-split-h-4</td>
+                                    <td>4</td>
+                                    <td>kl-left-in, kl-right-in</td>
+                                </tr>
+                                <tr>
+                                    <td>Split Vertical (curtains)</td>
+                                    <td>kl-card-overlay-split-v</td>
+                                    <td>2</td>
+                                    <td>--</td>
+                                </tr>
+                                <tr>
+                                    <td>Split Vertical 3</td>
+                                    <td>kl-card-overlay-split-v-3</td>
+                                    <td>3</td>
+                                    <td>kl-top-in, kl-bottom-in</td>
+                                </tr>
+                                <tr>
+                                    <td>Split Vertical 4</td>
+                                    <td>kl-card-overlay-split-v-4</td>
+                                    <td>4</td>
+                                    <td>kl-top-in, kl-bottom-in</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
                     <div class="col-12 col-sm-6 col-md-4">
                         <div class="card kl-card kl-overlay">
                             <div class="kl-card-block kl-lg">
@@ -1131,7 +1200,7 @@
                     <p>To make an overlay appear (or disappear) you need to add a trigger class of <code>kl-overlay</code> to a block-level parent element. <em>Note that it does not have to be the direct parent element itself.</em> Here are some examples for you:</p>
 
                     <div class="row">
-                        <div class="col-12 col-sm-6">
+                        <div class="col-12 col-md-6">
 <pre><code>
 &lt;div class="card kl-card kl-overlay"&gt;
     &lt;div class="kl-card-block kl-lg"&gt;
@@ -1152,7 +1221,7 @@
 &lt;/div&gt;
 </code></pre>
                         </div>
-                        <div class="col-12 col-sm-6">
+                        <div class="col-12 col-md-6 col-lg-4">
                             <div class="card kl-card kl-overlay">
                                 <div class="kl-card-block kl-lg">
                                     <div class="kl-card-overlay kl-card-overlay-split-q">
@@ -1178,7 +1247,7 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-12 col-sm-6">
+                        <div class="col-12 col-md-6">
 <pre><code>
 &lt;div class="card kl-card"&gt;
     &lt;div class="kl-card-block kl-lg kl-overlay"&gt;
@@ -1199,7 +1268,7 @@
 &lt;/div&gt;
 </code></pre>
                         </div>
-                        <div class="col-12 col-sm-6">
+                        <div class="col-12 col-md-6 col-lg-4">
                             <div class="card kl-card">
                                 <div class="kl-card-block kl-lg kl-overlay">
                                     <div class="kl-card-overlay kl-card-overlay-split-q">
@@ -1231,7 +1300,7 @@
                     <p>Sometimes you want your overlay to be visible by default and then disappear when hovered over right? No problem, we got you! Simply add the class <code>kl-inverse</code> to your <code>kl-card-overlay</code> element and it's all taken care of.</p>
  
                     <div class="row">
-                        <div class="col-12 col-sm-6">
+                        <div class="col-12 col-md-6">
 <pre><code>
 &lt;div class="card kl-card kl-overlay"&gt;
     &lt;div class="kl-card-block kl-lg"&gt;
@@ -1252,7 +1321,7 @@
 &lt;/div&gt;
 </code></pre>
                         </div>
-                        <div class="col-12 col-sm-6">
+                        <div class="col-12 col-md-6 col-lg-4">
                             <div class="card kl-card kl-overlay">
                                 <div class="kl-card-block kl-lg">
                                     <div class="kl-card-overlay kl-card-overlay-split-q kl-inverse">
@@ -1283,8 +1352,8 @@
                     <h4>Static Overlays</h4>
                     <p>Sometimes you want an overlay to be visible but not disappear. We hear you! Simply add the class <code>kl-static</code> alongside the <code>kl-inverse</code> class to stop the overlay from disappearing.</p>
 
-                                        <div class="row">
-                        <div class="col-12 col-sm-6">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
 <pre><code>
 &lt;div class="card kl-card kl-overlay"&gt;
     &lt;div class="kl-card-block kl-lg"&gt;
@@ -1320,7 +1389,7 @@
 &lt;/div&gt;
 </code></pre>
                         </div>
-                        <div class="col-12 col-sm-6">
+                        <div class="col-12 col-md-6 col-lg-4">
                             <div class="card kl-card kl-overlay">
                                 <div class="kl-card-block kl-lg">
                                     <div class="kl-card-overlay kl-card-overlay-split-q kl-inverse kl-static">
@@ -1349,7 +1418,7 @@
                                         <div class="text-white small">Going, going, gone.</div>
                                     </div>
                                     <div class="kl-background">
-                                        <img src="https://www.lorempixel.com/300/300/nature">
+                                        <img src="https://www.lorempixel.com/200/200/nature">
                                     </div>
                                 </div>
                                 <div class="card-block">
@@ -1361,9 +1430,12 @@
                         </div>
                     </div>
 
-                </div>
+                    <div class="alert alert-success">Don't forget you can also add <code>kl-dark</code> or <code>kl-lite</code> to get a more or less transparent overlay.</div>
 
                 </div>
+
+                <hr>
+
 
                 <h2>Animations</h2>
                 <p></p>
