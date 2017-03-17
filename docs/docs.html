@@ -106,7 +106,9 @@
                         <tr><td>kl-xxl</td><td>300px</td></tr>
                     </table>
                 </p>
-                <p>Card blocks should <strong>not</strong> be nested. They are super-level blocks (i.e. the biggest).</p>
+                <p>
+                    <div class="alert alert-danger">Card blocks should <strong>not</strong> be nested. They are super-level blocks (i.e. the biggest).</div>
+                </p>
 
                 <hr>
                 <h4>Backgrounds</h4>
@@ -133,7 +135,11 @@
                 <hr>
 
                 <h2>Card Avatars</h2>
-                <p>You can't have a profile card without an avatar! Well you can, but that's just no fun at all. To add an avatar to your card you use the <code>kl-card-avatar</code> class on an anchor element and put the image for the avatar inside of that. You want to put your avatar inside one of your <code>kl-card-block</code> elements, like in the example below.</p>
+                <p>You can't have a profile card without an avatar! Well you can, but that's just no fun at all. To add an avatar to your card use the <code>kl-card-avatar</code> class on an anchor element and put the image for the avatar inside of that. Like in the example below.</p>
+
+                <p>
+                    <div class="alert alert-danger">Make sure you put your avatar <strong>inside</strong> a <code>kl-card-block</code> element.</div>
+                </p>
 
 <div class="card">
 <div class="card-block">
@@ -157,80 +163,186 @@
 </div>
     
                 <hr>
-                <h4>Avatar Shapes</h4>
-                <p>We've put together some quick shape classes for you to get the ball rolling, but you can shape your avatar any way that you want to. If you can think of some interesting shapes that could enhance the options below send us a pull request.</p>
-                <p>
-                    <table class="table table-striped">
-                        <thead class="thead-inverse">
-                            <tr><th>Shape Class</th><th>Output</th></tr>
-                        </thead>
-                        <tr><td>No class</td><td>
-                            <div class="kl-card">
-                                <a href="#" class="kl-card-avatar kl-sm"><img class="" src="https://lorempixel.com/48/48/people"></a>
+                <h4>Avatar Styles</h4>
+
+                <ul class="nav nav-tabs mt-3">
+                    <li class="active"><a href="#avatarShapes" data-toggle="tab">Shapes</a></li>
+                    <li><a href="#avatarSizes" data-toggle="tab">Sizes</a></li>
+                    <li><a href="#avatarBorders" data-toggle="tab">Borders</a></li>
+                    <li><a href="#avatarExamples" data-toggle="tab">Examples</a></li>
+                </ul>
+
+                <div class="tab-content mt-4">
+                    
+                    <div class="tab-pane active fade in" id="avatarShapes">
+
+                        <p>We've put together some quick shape classes for you to get the ball rolling, but you can shape your avatar any way that you want to. If you can think of some interesting shapes that could enhance the options below send us a pull request.</p>
+                        <p>
+
+                        <table class="table table-striped">
+                            <thead class="thead-inverse">
+                                <tr><th>Shape Class</th><th>Output</th></tr>
+                            </thead>
+                            <tr><td>No class</td><td>
+                                <div class="kl-card">
+                                    <a href="#" class="kl-card-avatar kl-sm"><img class="" src="https://lorempixel.com/48/48/people"></a>
+                                </div>
+                            </td></tr>
+                            <tr><td>kl-b-rounded</td><td>
+                                <div class="kl-card">
+                                    <a href="#" class="kl-card-avatar kl-sm"><img class="kl-b-rounded" src="https://www.lorempixel.com/48/48/people"></a>
+                                </div>
+                            </td></tr>
+                            <tr><td>kl-b-circle</td><td>
+                                <div class="kl-card">
+                                    <a href="#" class="kl-card-avatar kl-sm"><img class="kl-b-circle" src="https://www.lorempixel.com/48/48/people"></a>
+                                </div>
+                            </td></tr>
+                            <tr><td>kl-b-house</td><td>
+                                <div class="kl-card">
+                                    <a href="#" class="kl-card-avatar kl-sm"><img class="kl-b-house" src="https://www.lorempixel.com/48/48/people"></a>
+                                </div>
+                            </td></tr>
+                            <tr><td>kl-b-shield</td><td>
+                                <div class="kl-card">
+                                    <a href="#" class="kl-card-avatar kl-sm"><img class="kl-b-shield" src="https://www.lorempixel.com/48/48/people"></a>
+                                </div>
+                            </td></tr>
+                            <tr><td>kl-b-corner</td><td>
+                                <div class="kl-card">
+                                    <a href="#" class="kl-card-avatar kl-sm"><img class="kl-b-corner" src="https://www.lorempixel.com/48/48/people"></a>
+                                </div>
+                            </td></tr>
+                            <tr><td>kl-b-corner-inverse</td><td>
+                                <div class="kl-card">
+                                    <a href="#" class="kl-card-avatar kl-sm"><img class="kl-b-corner-inverse" src="https://www.lorempixel.com/48/48/people"></a>
+                                </div>
+                            </td></tr>
+                            <tr><td>kl-b-ring</td><td>
+                                <div class="kl-card">
+                                    <a href="#" class="kl-card-avatar kl-sm"><img class="kl-b-ring" src="https://www.lorempixel.com/48/48/people"></a>
+                                </div>
+                            </td></tr>
+                            <tr><td>kl-b-ring-inverse</td><td>
+                                <div class="kl-card">
+                                    <a href="#" class="kl-card-avatar kl-sm"><img class="kl-b-ring-inverse" src="https://www.lorempixel.com/48/48/people"></a>
+                                </div>
+                            </td></tr>
+                            <tr><td>kl-b-lemon</td><td>
+                                <div class="kl-card">
+                                    <a href="#" class="kl-card-avatar kl-sm"><img class="kl-b-lemon" src="https://www.lorempixel.com/48/48/people"></a>
+                                </div>
+                            </td></tr>
+                            <tr><td>kl-b-lemon-inverse</td><td>
+                                <div class="kl-card">
+                                    <a href="#" class="kl-card-avatar kl-sm"><img class="kl-b-lemon-inverse" src="https://www.lorempixel.com/48/48/people"></a>
+                                </div>
+                            </td></tr>
+                        </table>
+
+                    </div>
+
+                    <div class="tab-pane fade" id="avatarSizes">
+
+                        <p>You can customise the size of your avatars with the following classes. The size class should go directly onto the anchor with class <code>kl-card-avatar</code>, for something like this: <code>&lt;a class="kl-card-avatar kl-xl"&gt;&lt;img src="https://www.lorempixel.com/100/100/people"&gt;&lt;/a&gt;</code></p>
+
+                        <table class="table table-striped">
+                            <thead class="thead-inverse">
+                                <tr><th>Shape Class</th><th>Output</th></tr>
+                            </thead>
+                            <tr><td>No class</td><td>
+                                <div class="kl-card">
+                                    <a href="#" class="kl-card-avatar"><img class="" src="https://lorempixel.com/100/100/people"></a>
+                                </div>
+                            </td></tr>
+                            <tr><td>kl-xs</td><td>
+                                <div class="kl-card">
+                                    <a href="#" class="kl-card-avatar kl-xs"><img class="" src="https://lorempixel.com/100/100/people"></a>
+                                </div>
+                            </td></tr>
+                            <tr><td>kl-b-sm</td><td>
+                                <div class="kl-card">
+                                    <a href="#" class="kl-card-avatar kl-sm"><img class="" src="https://lorempixel.com/100/100/people"></a>
+                                </div>
+                            </td></tr>
+                            <tr><td>kl-b-md</td><td>
+                                <div class="kl-card">
+                                    <a href="#" class="kl-card-avatar kl-md"><img class="" src="https://lorempixel.com/100/100/people"></a>
+                                </div>
+                            </td></tr>
+                            <tr><td>kl-b-lg</td><td>
+                                <div class="kl-card">
+                                    <a href="#" class="kl-card-avatar kl-lg"><img class="" src="https://lorempixel.com/100/100/people"></a>
+                                </div>
+                            </td></tr>
+                            <tr><td>kl-b-xl</td><td>
+                                <div class="kl-card">
+                                    <a href="#" class="kl-card-avatar kl-xl"><img class="" src="https://lorempixel.com/100/100/people"></a>
+                                </div>
+                            </td></tr>
+                        </table>
+
+                    </div>
+
+                    <div class="tab-pane fade" id="avatarBorders">
+
+                        <p>There are two parts to styling the borders of your avatars. First the colour and then the size. We offer standard Bootstrap colour classes, namespaced with 'kl-b-', for example <code>kl-b-primary</code>.</p>
+                        <p>To handle the sizing of your avatars' borders we use a counter method class just like Bootstrap's utility margin classes like <code>mt-4</code>. Border colours and sizes must go on the <code>&lt;img&gt;</code> element to work, not the parent anchor.</p>
+
+                        <table class="table table-striped">
+                            <thead class="thead-inverse">
+                                <tr><th>Size Class</th><th>Output</th></tr>
+                            </thead>
+                            <tr><td>No class</td><td>
+                                <div class="kl-card">
+                                    <a href="#" class="kl-card-avatar kl-lg"><img class="kl-b-primary" src="https://lorempixel.com/100/100/people"></a>
+                                </div>
+                            </td></tr>
+                            <tr><td>kl-b-1</td><td>
+                                <div class="kl-card">
+                                    <a href="#" class="kl-card-avatar kl-lg"><img class="kl-b-success kl-b-1" src="https://lorempixel.com/100/100/people"></a>
+                                </div>
+                            </td></tr>
+                            <tr><td>kl-b-2</td><td>
+                                <div class="kl-card">
+                                    <a href="#" class="kl-card-avatar kl-lg"><img class="kl-b-warning kl-b-2" src="https://lorempixel.com/100/100/people"></a>
+                                </div>
+                            </td></tr>
+                            <tr><td>kl-b-3</td><td>
+                                <div class="kl-card">
+                                    <a href="#" class="kl-card-avatar kl-lg"><img class="kl-b-danger kl-b-3" src="https://lorempixel.com/100/100/people"></a>
+                                </div>
+                            </td></tr>
+                            <tr><td>kl-b-4</td><td>
+                                <div class="kl-card">
+                                    <a href="#" class="kl-card-avatar kl-lg"><img class="kl-b-info kl-b-4" src="https://lorempixel.com/100/100/people"></a>
+                                </div>
+                            </td></tr>
+                            <tr><td>kl-b-5</td><td>
+                                <div class="kl-card">
+                                    <a href="#" class="kl-card-avatar kl-lg"><img class="kl-b-white kl-b-5" src="https://lorempixel.com/100/100/people"></a>
+                                </div>
+                            </td></tr>
+                            <tr><td>kl-b-6</td><td>
+                                <div class="kl-card">
+                                    <a href="#" class="kl-card-avatar kl-lg"><img class="kl-b-black kl-b-6" src="https://lorempixel.com/100/100/people"></a>
+                                </div>
+                            </td></tr>
+                        </table>
+
+                        <p>
+                            <div class="alert alert-warning">
+                                We don't actually apply a border to the image, we actually apply a background and padding to look like a border. This allows for optional transitions and animations on the 'borders' of the image to change its colour in interesting ways.
                             </div>
-                        </td></tr>
-                        <tr><td>kl-b-rounded</td><td>
-                            <div class="kl-card">
-                                <a href="#" class="kl-card-avatar kl-sm"><img class="kl-b-rounded" src="https://www.lorempixel.com/48/48/people"></a>
-                            </div>
-                        </td></tr>
-                        <tr><td>kl-b-circle</td><td>
-                            <div class="kl-card">
-                                <a href="#" class="kl-card-avatar kl-sm"><img class="kl-b-circle" src="https://www.lorempixel.com/48/48/people"></a>
-                            </div>
-                        </td></tr>
-                        <tr><td>kl-b-house</td><td>
-                            <div class="kl-card">
-                                <a href="#" class="kl-card-avatar kl-sm"><img class="kl-b-house" src="https://www.lorempixel.com/48/48/people"></a>
-                            </div>
-                        </td></tr>
-                        <tr><td>kl-b-shield</td><td>
-                            <div class="kl-card">
-                                <a href="#" class="kl-card-avatar kl-sm"><img class="kl-b-shield" src="https://www.lorempixel.com/48/48/people"></a>
-                            </div>
-                        </td></tr>
-                        <tr><td>kl-b-corner</td><td>
-                            <div class="kl-card">
-                                <a href="#" class="kl-card-avatar kl-sm"><img class="kl-b-corner" src="https://www.lorempixel.com/48/48/people"></a>
-                            </div>
-                        </td></tr>
-                        <tr><td>kl-b-corner-inverse</td><td>
-                            <div class="kl-card">
-                                <a href="#" class="kl-card-avatar kl-sm"><img class="kl-b-corner-inverse" src="https://www.lorempixel.com/48/48/people"></a>
-                            </div>
-                        </td></tr>
-                        <tr><td>kl-b-ring</td><td>
-                            <div class="kl-card">
-                                <a href="#" class="kl-card-avatar kl-sm"><img class="kl-b-ring" src="https://www.lorempixel.com/48/48/people"></a>
-                            </div>
-                        </td></tr>
-                        <tr><td>kl-b-ring-inverse</td><td>
-                            <div class="kl-card">
-                                <a href="#" class="kl-card-avatar kl-sm"><img class="kl-b-ring-inverse" src="https://www.lorempixel.com/48/48/people"></a>
-                            </div>
-                        </td></tr>
-                        <tr><td>kl-b-lemon</td><td>
-                            <div class="kl-card">
-                                <a href="#" class="kl-card-avatar kl-sm"><img class="kl-b-lemon" src="https://www.lorempixel.com/48/48/people"></a>
-                            </div>
-                        </td></tr>
-                        <tr><td>kl-b-lemon-inverse</td><td>
-                            <div class="kl-card">
-                                <a href="#" class="kl-card-avatar kl-sm"><img class="kl-b-lemon-inverse" src="https://www.lorempixel.com/48/48/people"></a>
-                            </div>
-                        </td></tr>
-                    </table>
+                        </p>
+
+                    </div>
+
+                </div>
+
+                        
+                        
                 </p>
-
-                <hr>
-
-                <h4>Avatar Sizes</h4>
-                <p></p>
-
-                <hr>
-
-                <h4>Avatar Borders (size and colour)</h4>
-                <p></p>
 
                 <hr>
 
