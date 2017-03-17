@@ -457,14 +457,6 @@ SOFTWARE.
     color: #e8e8e8;
 }
 
-/** -- TEXT STYLES -- **/
-.kl-txt-shadow {
-    text-shadow: 1px 1px 2px rgba(68, 68, 68, 1);
-}
-.kl-txt-shadow-lite {
-    text-shadow: 1px 1px 2px rgba(234, 234, 234, 1);
-}
-
 /** -- TRANSITION STYLES -- **/
 .kl-card, .kl-card-avatar, .kl-card-avatar img, .kl-card-top, .kl-card-social img, kl-card .kl-card-overlay, .kl-card .kl-figure-block, .kl-card .kl-card-item {
     -webkit-transition-duration: 0.5s;
@@ -714,6 +706,15 @@ SOFTWARE.
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 50%;
 }
+
+/** -- UTILITY STYLES -- **/
+.kl-txt-shadow {
+    text-shadow: 1px 1px 2px rgba(68, 68, 68, 1);
+}
+.kl-txt-shadow-lite {
+    text-shadow: 1px 1px 2px rgba(234, 234, 234, 1);
+}
+
 .kl-shadow {
     -webkit-box-shadow: 0px 0px 5px 3px rgba(50, 50, 50, 0.75);
     -moz-box-shadow:    0px 0px 5px 3px rgba(50, 50, 50, 0.75);

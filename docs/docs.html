@@ -823,8 +823,8 @@
                 <p>Here is the previous example with overflows:</p>
 
                 <div class="row my-5">
-                    <div class="col-12 col-sm-6 offset-sm-3 col-lg-8 offset-lg-2">
 
+                    <div class="col-12 col-md-8 offset-md-2">
                         <table class="table text-center mb-5">
                             <tr>
                                 <td>kl-ptl kl-pto kl-plo</td>
@@ -862,6 +862,9 @@
                                 <td>kl-pbr kl-pbo kl-pro</td>
                             </tr>
                         </table>
+                    </div>
+
+                    <div class="col-12 col-sm-6 offset-sm-3 col-lg-8 offset-lg-2">
 
                         <div class="card kl-card">
                     
@@ -1586,6 +1589,8 @@
                             </div>
                         </div>
 
+                        <div class="alert alert-danger">Watch out! The slide-in and slide-out transitions will force the parent block to have overflow hidden.</div>
+
                     </div>
 
 
@@ -1658,7 +1663,7 @@
 <pre><code>
 &lt;div class="card kl-card"&gt;
     &lt;div class="kl-card-block kl-lg"&gt;
-        &lt;a href="#" class="kl-card-avatar kl-lg kl-pm"&gt;&lt;img class="kl-b-danger kl-b-lemon kl-b-3 kl-shadow kl-hide kl-spin" src="https://lorempixel.com/100/100/people"&gt;&lt;/a&gt;
+        &lt;a href="#" class="kl-card-avatar kl-lg kl-pm"&gt;&lt;img class="kl-b-danger kl-b-lemon kl-b-3 kl-shadow kl-reveal kl-spin" src="https://lorempixel.com/100/100/people"&gt;&lt;/a&gt;
         &lt;div class="kl-background"&gt;
             &lt;img src="https://www.lorempixel.com/300/300/nature"&gt;
         &lt;/div&gt;
@@ -1669,7 +1674,7 @@
                         <div class="col-12 col-md-6 col-lg-4">
                             <div class="card kl-card">
                                 <div class="kl-card-block kl-lg">
-                                    <a href="#" class="kl-card-avatar kl-lg kl-pm"><img class="kl-b-danger kl-b-lemon kl-b-3 kl-shadow kl-hide kl-spin" src="https://lorempixel.com/100/100/people"></a>
+                                    <a href="#" class="kl-card-avatar kl-lg kl-pm"><img class="kl-b-danger kl-b-lemon kl-b-3 kl-shadow kl-reveal kl-spin" src="https://lorempixel.com/100/100/people"></a>
                                     <div class="kl-background">
                                         <img src="https://www.lorempixel.com/300/300/nature">
                                     </div>
@@ -1686,11 +1691,45 @@
 
                 <hr>
 
-                <h2>Utilities</h2>
-                <p></p>
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <h2>Utility Classes</h2>
+                        <p>We've provided you with a few utility classes to easily make things a little bit <strong>funkier</strong>. Simply apply them to your elements to get some instant sparkle.</p>
+                    </div>
+                        
 
-                <h4 id="utilities_Shadows"></h4>
+                    <div class="col-12" id="utilities_Shadows">
+                        <h4>Shadows</h4>
+                        <p>Want to add some shadows to your blocks, elements and text? Here you go, nice and simple.</p>
+                        <p>Add the class <code>kl-shadow</code> or one of its positonal variations to apply box-shadow to something.</p>
+                        <p>
+                            <ul>
+                                <li>kl-shadow-t ~ top shadow</li>
+                                <li>kl-shadow-tr ~ top-right shadow</li>
+                                <li>kl-shadow-r ~ right shadow</li>
+                                <li>kl-shadow-br ~ bottom right shadow</li>
+                                <li>kl-shadow-b ~ bottom shadow</li>
+                                <li>kl-shadow-bl ~ bottom left shadow</li>
+                                <li>kl-shadow-l ~ left shadow</li>
+                                <li>kl-shadow-tl ~ top left shadow</li>
+                            </ul>
+                        </p>
 
+                        <p>You can also use the text shadow classes <code>kl-txt-shadow</code> and <code>kl-txt-shadow-lite</code> to add a bit of shadow to your text.</p>
+                        
+                    </div>
+
+                    <div class="col-12" id="utilities_HorizontalLines">
+                        <h4>Horizontal Lines</h4>
+                        <p>We often use the following utility classes for horizontal lines to mix-up their width and placement. You can apply these styles to other elements if you want.</p>
+                        <ul>
+                            <li>qw ~ 1/4 width centered</li>
+                            <li>hw ~ 1/2 width centered</li>
+                            <li>tqw ~ 3/4 width centered</li>
+                        </ul>
+                    </div>
+
+                </div>
 
             </div>
         </div>
